@@ -2,27 +2,57 @@
 <html>
 
 <head>
-  <title>Nanji</title>
-  <link rel="stylesheet" href="./css/digital_clock.css">
-  <link rel="stylesheet" href="./css/time_button.css">
-  <link rel="stylesheet" href="./css/japanese-time.css">
+  <title>Nanji Desu</title>
+
+  <style>
+    body {
+      background-color: #f3f3f3;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .content {
+      background-color: #f3f3f3;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .content h1 {
+      font-size: 50px;
+    }
+
+    .content button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    .content button:hover {
+      background-color: #3e8e41;
+    }
+
+    .content button:active,
+    .content button:focus {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+  </style>
 </head>
 
 <body>
 
-  <div class="time-div">
-    <div id="MyClockDisplay" class="clock" onload="showTime()" clock-style="twelve-hour"></div>
-    <!-- checkbox for 24 hour time -->
+  <div class="content">
+    <h1>Nanji Desu Ka</h1>
 
-    <button id="random-button">New Time</button>
+    <a href="./clocks/analog_clock.html"><button id="to-analog">Analog</button></a>
+    <a href="./clocks/digital_clock.html"><button id="to-digital">Digital</button></a>
   </div>
-  <div class="japanese-div" onload="changeJapaneseTimeText()">
-    <button id="japanese-toggle" class="japanese">Show/Hide</button>
-    <p id="japanese-time" class="japanese" hidden></p>
-  </div>
-
-  <script src="./js/digital_clock.js"></script>
-  <script src="./js/japanese_translation.js"></script>
 </body>
 
 </html>

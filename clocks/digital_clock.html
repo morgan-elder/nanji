@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Nanji</title>
+  <link rel="stylesheet" href="../css/digital_clock.css">
+  <link rel="stylesheet" href="../css/time_button.css">
+  <link rel="stylesheet" href="../css/japanese-time.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+</head>
+
+<body>
+
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a class="active" href="#digital">Digital</a></li>
+    <li><a href="./analog_clock.html">Analog</a></li>
+  </ul>
+
+  <div class="time-div">
+    <div id="MyClockDisplay" class="clock" onload="showTime()" clock-style="twelve-hour"></div>
+    <!-- checkbox for 24 hour time -->
+
+    <button id="random-button">New Time</button>
+  </div>
+  <div class="japanese-div" onload="changeJapaneseTimeText()">
+    <button id="japanese-toggle" class="japanese">Show/Hide</button>
+    <p id="japanese-time" class="japanese" hidden></p>
+  </div>
+
+  <script src="../js/digital_clock.js"></script>
+  <script src="../js/japanese_translation.js"></script>
+</body>
+
+</html>
