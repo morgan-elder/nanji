@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Orbitron';
+  src: URL('../tff/Orbitron-VariableFont_wght.ttf') format('truetype');
+}
+
+.time-div {
+  /* Your styles for .time-div element */
+  display: block;
+  margin-top: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  /* Adjust this value as per your requirement */
+  text-align: center;
+  /* Add this line to center the element */
+}
+
+.time-div button {
+  /* Your styles for .time-div button element */
+  background-color: #17D4FE;
+  border: none;
+  color: black;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 3vw;
+  font-family: Orbitron;
+  letter-spacing: 7px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 30px;
+}
